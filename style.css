@@ -102,7 +102,15 @@ h1:hover{
 .btn:hover{
     font-display:"click here" ;
  }
-
+#btnCopy{
+  display:inline;
+  float:right;
+  text-align:center;
+  color:black;
+  margin-top: 5px;
+  background-color: rgb(94, 152, 179);
+  border-radius: 4px;
+}
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
