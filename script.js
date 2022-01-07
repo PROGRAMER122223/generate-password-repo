@@ -1,5 +1,5 @@
-
 var generateBtn = document.querySelector("#generate");
+
 const asciinum = [48, 57];
 const asciiupper = [65, 90];
 const asciilower = [97, 122];
@@ -88,5 +88,17 @@ function writePassword() {
 
 }
 
+
+function myFunction(){
+var  pw = document.getElementById("password");
+    // copyText.setSelectionRange(0, 99999); /* For mobile devices */
+//   pw.select();
+      /* Copy the text inside the text field */
+    navigator.clipboard.writeText(pw.value);
+
+   //document.execCommand("copy") /* Alert the copied text */
+   // alert("Copied the text: " + pw.value);
+     console.log("copied text "+ pw.value);
+ }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
