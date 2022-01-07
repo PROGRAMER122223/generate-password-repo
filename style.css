@@ -34,11 +34,9 @@ header {
 h1:hover{
  color: black;
  font-weight: bolder;
- font-style:oblique;
-     
+ font-stretch: extra-expanded;
+ 
 }
-
-
 
 .card {
   background-color: rgb(227, 231, 233);
@@ -67,6 +65,7 @@ h1:hover{
 
 .card-footer {
   text-align: center;
+  
 }
 
 .card-footer::before {
@@ -102,15 +101,20 @@ h1:hover{
 }
 .btn:hover{
     font-display:"click here" ;
-}
+ }
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
+
+
 }
 
 .float-right {
   float: right;
 }
+
+
 
 #password {
   -webkit-appearance: none;
