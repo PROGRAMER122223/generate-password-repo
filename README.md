@@ -72,8 +72,7 @@ The following image shows the web application's appearance and functionality:
 
 You are required to submit the following for review:
 
-* [The URL of the deployed application]("https://programer122223.github.io/generate-password-repo/)
+* [The URL of the deployed application](https://programer122223.github.io/generate-password-repo/)
   
 
-* 
-[URL Github REPOSITORY](https://github.com/PROGRAMER122223/generate-password-repo.git)
+* [URL Github REPOSITORY](https://github.com/PROGRAMER122223/generate-password-repo.git)
