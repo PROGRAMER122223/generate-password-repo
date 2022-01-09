@@ -51,7 +51,7 @@ function generatePassword() {
 
             console.log("randomArray" + randomArray);
 
-             //for getting whole number from array
+             //for getting array of random values 
             for (let i = 0; i < length; i++) {
                 password.push(String.fromCharCode(randomArray[Math.floor(Math.random() * randomArray.length)]));
 
