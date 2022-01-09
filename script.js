@@ -56,7 +56,7 @@ function generatePassword() {
                 password.push(String.fromCharCode(randomArray[Math.floor(Math.random() * randomArray.length)]));
 
             }
-
+             //function to array to string 
             let output = "";
 
             for (let i = 0; i < password.length; i++) {
