@@ -1,6 +1,7 @@
 
 //declare variables
 var generateBtn = document.querySelector("#generate");
+
 //declaring arrays with unicode characters
 const asciinum = [48, 57];
 const asciiupper = [65, 90];
@@ -86,12 +87,14 @@ function writePassword() {
 
     passwordText.value = password;
 
+     
 }
 
 //function to copy paasword 
 function myFunction() {
     var pw = document.getElementById("password");
-
+    //var yes=confirm("do you want to copy the password") ;
+    //if(yes){}
 
     /* Copy the text inside the text field */
     navigator.clipboard.writeText(pw.value);
@@ -99,8 +102,14 @@ function myFunction() {
     //document.execCommand("copy") /* Alert the copied text */
     // alert("Copied the text: " + pw.value);
     console.log("copied text " + pw.value);
-    alert("copied. ")
-}
+    alert("copied. ");
+    //refresh the page
+   location.reload();
+  //  else{
+       
+
+    }
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
