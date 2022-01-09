@@ -1,5 +1,7 @@
-var generateBtn = document.querySelector("#generate");
 
+//declare variables
+var generateBtn = document.querySelector("#generate");
+//declaring arrays with unicode characters
 const asciinum = [48, 57];
 const asciiupper = [65, 90];
 const asciilower = [97, 122];
@@ -49,9 +51,7 @@ function generatePassword() {
 
             console.log("randomArray" + randomArray);
 
-
-
-
+             //for getting whole number from array
             for (let i = 0; i < length; i++) {
                 password.push(String.fromCharCode(randomArray[Math.floor(Math.random() * randomArray.length)]));
 
@@ -88,17 +88,19 @@ function writePassword() {
 
 }
 
+//function to copy paasword 
+function myFunction() {
+    var pw = document.getElementById("password");
 
-function myFunction(){
-var  pw = document.getElementById("password");
-    // copyText.setSelectionRange(0, 99999); /* For mobile devices */
-//   pw.select();
-      /* Copy the text inside the text field */
+
+    /* Copy the text inside the text field */
     navigator.clipboard.writeText(pw.value);
 
-   //document.execCommand("copy") /* Alert the copied text */
-   // alert("Copied the text: " + pw.value);
-     console.log("copied text "+ pw.value);
- }
+    //document.execCommand("copy") /* Alert the copied text */
+    // alert("Copied the text: " + pw.value);
+    console.log("copied text " + pw.value);
+    alert("copied. ")
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
