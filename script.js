@@ -52,12 +52,12 @@ function generatePassword() {
 
             console.log("randomArray" + randomArray);
 
-             //for getting array of random values 
+            //for getting array of random values 
             for (let i = 0; i < length; i++) {
                 password.push(String.fromCharCode(randomArray[Math.floor(Math.random() * randomArray.length)]));
 
             }
-             //function to array to string 
+            //function to array to string 
             let output = "";
 
             for (let i = 0; i < password.length; i++) {
@@ -87,15 +87,11 @@ function writePassword() {
 
     passwordText.value = password;
 
-     
 }
 
 //function to copy paasword 
 function myFunction() {
     var pw = document.getElementById("password");
-    //var yes=confirm("do you want to copy the password") ;
-    //if(yes){}
-
     /* Copy the text inside the text field */
     navigator.clipboard.writeText(pw.value);
 
@@ -104,11 +100,9 @@ function myFunction() {
     console.log("copied text " + pw.value);
     alert("copied. ");
     //refresh the page
-   location.reload();
-  //  else{
-       
+    location.reload();
 
-    }
+}
 
 
 // Add event listener to generate button
