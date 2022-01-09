@@ -61,6 +61,7 @@ h1:hover{
 
 .card-body {
   min-height: 100px;
+  border-radius: 15pxpx;
 }
 
 .card-footer {
@@ -108,7 +109,7 @@ h1:hover{
   text-align:center;
   color:black;
   margin-top: 5px;
-  background-color: rgb(94, 152, 179);
+  background-color: rgb(71, 141, 233);
   border-radius: 4px;
 }
 button[disabled] {
