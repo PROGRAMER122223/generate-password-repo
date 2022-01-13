@@ -25,7 +25,7 @@ function generatePassword() {
         const upper = window.confirm("select Upper case");
         const lower = window.confirm("select Lower case");
         const symbol = window.confirm("select Symbol");
-        if ((num > 0) && (upper > 0) && (lower > 0) && (symbol > 0)) {
+        if ((num > 0) ||(upper > 0) || (lower > 0) ||(symbol > 0)) {
 
             if (num) {
                 for (let i = asciinum[0]; i <= asciinum[1]; i++) {
